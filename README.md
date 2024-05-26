@@ -56,9 +56,6 @@ The Image Analysis Project is a web application that allows users to upload an i
 ## Example
 ![Example Image](static/example.png)
 
-## Detailed Report
-The detailed project report can be found in the `report/` directory, which includes documentation on the approach, chosen technologies, implementation details, and challenges encountered.
-
 ## Bonus Features
 - Basic HTML structure to sort the extracted content into appropriate tags like paragraphs (`<p>`) and creating and embedding static images of visual elements using `<img>` tags.
 
