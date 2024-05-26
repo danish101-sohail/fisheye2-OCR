@@ -2,8 +2,3 @@ Flask==2.0.2
 azure-cognitiveservices-vision-computervision==0.7.0
 werkzeug==2.0.3
 opencv-python-headless
-
-
-# # Azure Computer Vision credentials
-# subscription_key = '21300d7af17142eb8aa9c8eaa90c74b7'
-# endpoint = 'https://fisheye-ocr-dan-image-analysis.cognitiveservices.azure.com/'
