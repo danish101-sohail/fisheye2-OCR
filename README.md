@@ -20,10 +20,8 @@ The Image Analysis Project is a web application that allows users to upload an i
 ### Steps
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your_username/image_analysis_project.git
-    cd image_analysis_project
+    git clone https://github.com/danish101-sohail/fisheye2-OCR.git
     ```
-
 2. Create a virtual environment and activate it:
     ```sh
     python -m venv venv
@@ -54,6 +52,9 @@ The Image Analysis Project is a web application that allows users to upload an i
 1. On the home page, click the "Choose File" button to select an image from your local machine.
 2. Click the "Upload Image" button to upload and analyze the image.
 3. The results page will display the extracted text and segmented images.
+
+## Example
+![Example Image](static/example.png)
 
 ## Detailed Report
 The detailed project report can be found in the `report/` directory, which includes documentation on the approach, chosen technologies, implementation details, and challenges encountered.
