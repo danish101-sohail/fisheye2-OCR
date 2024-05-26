@@ -2,7 +2,6 @@ import os
 from flask import Flask, request, render_template, redirect, url_for
 from werkzeug.utils import secure_filename
 import cv2
-import pytesseract
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from msrest.authentication import CognitiveServicesCredentials
 
@@ -11,8 +10,8 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['SEGMENT_FOLDER'] = 'static/segments'
 
 # Azure Computer Vision credentials
-subscription_key = "AZURE_SUBSCRIPTION_KEY"
-endpoint = "AZURE_ENDPOINT"
+subscription_key = os.environ.get('AZURE_VISION_SUBSCRIPTION_KEY')
+endpoint = os.environ.get('AZURE_VISION_ENDPOINT')
 
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
