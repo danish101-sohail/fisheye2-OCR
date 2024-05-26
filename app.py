@@ -11,10 +11,10 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['SEGMENT_FOLDER'] = 'static/segments'
 
 # Azure Computer Vision credentials
-AZURE_SUBSCRIPTION_KEY = '21300d7af17142eb8aa9c8eaa90c74b7'
-AZURE_ENDPOINT = 'https://fisheye-ocr-dan-image-analysis.cognitiveservices.azure.com/'
+subscription_key = "AZURE_SUBSCRIPTION_KEY"
+endpoint = "AZURE_ENDPOINT"
 
-computervision_client = ComputerVisionClient(AZURE_ENDPOINT, CognitiveServicesCredentials(AZURE_SUBSCRIPTION_KEY))
+computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 # Ensure directories exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
