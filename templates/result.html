@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Image Analysis Results</title>
+</head>
+<body>
+<div class="container">
+    <h1>Extracted Text</h1>
+    <pre>{{ text }}</pre>
+    <h1>Image Segments</h1>
+    <div class="segments">
+        {% for segment in segments %}
+            <img src="{{ url_for('static', filename=segment) }}" alt="Segment">
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('index') }}" class="btn">Upload Another Image</a>
+</div>
+</body>
+</html>
